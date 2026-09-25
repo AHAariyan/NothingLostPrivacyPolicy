@@ -4,52 +4,116 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NothingLost Privacy Policy</title>
+<meta name="description" content="Privacy policy for NothingLost, an Android app that keeps your notifications on your phone so you can read messages that were deleted or notifications you missed.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
-:root{--bg:#fefbff;--fg:#1b1b21;--muted:#46464f;--accent:#3d51d1}
-@media (prefers-color-scheme:dark){:root{--bg:#1b1b21;--fg:#e4e1e9;--muted:#c7c5d0;--accent:#bac3ff}}
-body{background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,sans-serif;margin:0;padding:24px 16px}
-main{max-width:680px;margin:0 auto}h1{color:var(--accent)}p,li{color:var(--muted)}
+  :root { --bg:#ffffff; --fg:#1b1b21; --muted:#5b5d72; --accent:#3d51d1; --card:#eef0ff; --line:#dcdff5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#121318; --fg:#e4e1e9; --muted:#a9abc2; --accent:#bac3ff; --card:#1b1d2a; --line:#2e3145; }
+  }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--fg); font:17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin:0; padding:32px 16px 48px; }
+  main { max-width:760px; margin:0 auto; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:8px; }
+  header img { width:48px; height:48px; border-radius:12px; }
+  h1 { color:var(--accent); font-size:2rem; line-height:1.2; margin:0; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; }
+  p, li { margin:0 0 10px; }
+  ul { padding-left:1.2em; }
+  a { color:var(--accent); }
+  code { font-size:.92em; }
+  .meta { color:var(--muted); font-size:.95rem; margin-bottom:24px; }
+  .summary { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 20px; }
+  .summary p:last-child { margin-bottom:0; }
+  .table-wrap { overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; font-size:.95rem; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  footer { margin-top:40px; color:var(--muted); font-size:.9rem; }
 </style>
 </head>
-<body><main>
-<h1>NothingLost Privacy Policy</h1>
-<p>Last updated: 25 September 2026</p>
-<h2>The short version</h2>
-<p>NothingLost keeps a copy of your notifications on your phone so you can read them later. Your notifications and messages never leave your phone. To improve the app, it sends anonymous usage statistics and crash reports, which you can turn off in Settings.</p>
-<h2>What the app reads</h2>
+<body>
+<main>
+<header>
+  <img src="apple-touch-icon.png" alt="">
+  <h1>NothingLost Privacy Policy</h1>
+</header>
+<p class="meta">Effective date: 25 September 2026 · App: NothingLost (Android, package <code>com.nothinglost.app</code>)</p>
+
+<div class="summary">
+  <p><strong>In short:</strong> NothingLost keeps a copy of your notifications on your phone, so you can read a message after the sender deletes it or find a notification you swiped away. Your notifications and messages never leave your phone. They are never uploaded, sold or shared, and we have no way to see them. There is no account and no advertising. The app shares anonymous usage statistics and crash reports that help us improve it, never the content of your notifications, and you can turn this off at any time in Settings.</p>
+</div>
+
+<h2>1. Who we are</h2>
+<p>NothingLost is an Android app published by an independent developer ("we", "us"). Contact details are at the end of this policy.</p>
+
+<h2>2. What the app reads, and where it stays</h2>
+<p>With your permission (Android's "notification access"), NothingLost reads notifications as they arrive on your phone: the app they came from, the title (for chats, usually the sender's name), the text and the time. For chat apps, it also notices when a message is later deleted, changed or withdrawn by the sender.</p>
+<p>This information is stored only in the app's private storage on your device. It is <strong>not sent to us or to anyone else</strong>, it is excluded from Android cloud backup and device-to-device transfer, and we have no way to see it.</p>
+<p>Android hides one-time passwords and some sensitive notifications from apps like this one; NothingLost cannot read those. Photos, voice notes and videos are not saved, only the text shown in the notification.</p>
+<p>To keep running on phones that close background apps, NothingLost shows a small silent notification, and it reads Android's own record of when and why the app was closed. That record is used on your phone to tell you if protection was off.</p>
+
+<h2>3. Usage statistics and crash reports</h2>
+<p>To understand which features are useful, where people get stuck, and why the app crashes, NothingLost uses Google Analytics for Firebase and Firebase Crashlytics (provided by Google). This is on by default. You can turn it off at any time in Settings → "Share anonymous usage stats". Turning it off stops collection and resets the random app-instance identifier, so statistics already sent can no longer be linked to your phone.</p>
+<p>The statistics record:</p>
 <ul>
-<li>With your permission (Android's "notification access"), NothingLost reads notifications as they arrive: the app they came from, the title, the text and the time.</li>
-<li>It stores them in a private database inside the app on your phone.</li>
-<li>To keep running on phones that close background apps, it shows a small silent notification. It also reads Android's own record of when and why the app was closed, on your phone only, so it can tell you if protection was off.</li>
+  <li>which screens are opened and which features are used, for example that the Deleted tab was opened, a search was started, the protection check was opened or the Pro screen was viewed;</li>
+  <li>whether setup steps were completed, for example that notification access was granted;</li>
+  <li>that a deleted, changed or withdrawn message was caught (never the message itself), and whether the phone closed the app, with how long it was off rounded into ranges;</li>
+  <li>whether a purchase succeeded, was cancelled or failed;</li>
+  <li>settings such as whether alerts are on and whether you have Pro;</li>
+  <li>where the app was installed from, if the Google Play Store link carried a campaign tag;</li>
+  <li>crash reports: technical details of the error and the names of the last few screens or actions before it;</li>
+  <li>technical information collected automatically by Firebase: app version, phone maker and model, Android version, language, approximate country, and a random app-instance identifier.</li>
 </ul>
-<h2>What the app sends</h2>
-<p>NothingLost uses Google Firebase Analytics and Firebase Crashlytics, provided by Google, to learn how the app is used and to fix crashes. They receive:</p>
+<p>These statistics <strong>never include</strong> the content of your notifications or messages, sender names, contacts, what you search for, which apps you keep notifications from, or anything you type. We do not collect your advertising ID and do not use the statistics for advertising.</p>
+<p>Google processes this data on our behalf under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. Statistics are kept for up to 14 months and are used only to understand how the app is used and to improve it. We do not sell or share them.</p>
+
+<h2>4. Purchases</h2>
+<p>NothingLost offers an optional one-time "Pro" upgrade sold through Google Play. Google processes the payment under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. We never receive your name, email address or payment details. The app only asks Google Play whether Pro has been purchased on your account, so it can unlock Pro features.</p>
+
+<h2>5. Things you choose to share</h2>
 <ul>
-<li>Which screens are opened and which buttons are used (for example "opened the Deleted tab", "tapped Unlock"), and whether setup steps were completed.</li>
-<li>That a deleted or changed message was caught, without its content.</li>
-<li>Crash reports: technical details of the error.</li>
-<li>Device information: phone maker and model, Android version, app version, language, and a random app-instance ID created by Firebase. Google derives an approximate country from the connection.</li>
+  <li><strong>Export:</strong> Pro users can export their saved notifications to a CSV file. The file is created on your device and goes only where you choose to save or send it.</li>
+  <li><strong>Telling a friend:</strong> the share button shares a link to the app on Google Play. It never includes any of your messages.</li>
+  <li><strong>Feedback survey:</strong> if you answer the short in-app survey, your browser opens our survey page with your answer and, if known, the campaign that brought you to the app. Nothing is sent unless you tap an answer.</li>
 </ul>
-<p>They never receive notification or message text, sender names, contacts, what you search for, or which apps you keep notifications from. The app does not collect the advertising ID.</p>
-<p>Turn this off at any time in Settings → "Share anonymous usage stats"; nothing more is sent after that. Google processes this data under its <a href="https://policies.google.com/privacy">privacy policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>. Analytics data is kept for up to 14 months.</p>
-<h2>What the app does not do</h2>
+
+<h2>6. Permissions</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>Permission</th><th>Why NothingLost uses it</th></tr>
+  <tr><td>Notification access</td><td>The core feature: to save notifications as they arrive, so you can read them later even if they were deleted or dismissed. You grant it in Android settings and can remove it at any time.</td></tr>
+  <tr><td>Notifications</td><td>To alert you when someone deletes or changes a message, and to show the small "watching for deleted messages" notification.</td></tr>
+  <tr><td>Foreground service</td><td>To keep NothingLost running on phones that close background apps, so messages are not missed.</td></tr>
+  <tr><td>Run at startup</td><td>To keep checking that notification saving is still running after your phone restarts.</td></tr>
+  <tr><td>Internet</td><td>Only for the anonymous usage statistics and crash reports described in section 3, and for Google Play purchases. Your notifications are never sent.</td></tr>
+</table>
+</div>
+<p>NothingLost does not use your camera, microphone, location, contacts, photos, SMS or call log, and does not use accessibility services.</p>
+
+<h2>7. Data retention and deletion</h2>
 <ul>
-<li>It does not upload, share, sell or back up your notifications or messages.</li>
-<li>Your saved notifications are excluded from Android cloud backup and device-to-device transfer.</li>
-<li>No accounts, no advertising, no selling of data.</li>
+  <li>Saved notifications stay on your device until you delete them. Notifications older than one year are deleted automatically.</li>
+  <li>You can choose which apps are kept, delete everything from Settings, remove notification access in Android settings, or uninstall the app, which deletes all saved data.</li>
+  <li>Because we hold no copy of your notifications, we cannot restore them once deleted.</li>
+  <li>Usage statistics are kept by Google for up to 14 months. Turning statistics off resets the app-instance identifier.</li>
 </ul>
-<h2>Purchases</h2>
-<p>The optional Pro unlock is sold through Google Play. Google processes the payment under its own privacy policy. NothingLost only learns whether the unlock was bought.</p>
-<h2>Your control</h2>
-<ul>
-<li>Choose which apps are kept, delete everything from Settings, or remove notification access at any time in Android Settings.</li>
-<li>Uninstalling the app deletes all saved data.</li>
-<li>Turning off "Share anonymous usage stats" also resets the random app-instance ID, so earlier statistics can no longer be linked to this phone. They are deleted automatically after 14 months.</li>
-<li>Notifications older than one year are deleted automatically.</li>
-</ul>
-<h2>Children</h2>
-<p>NothingLost is not directed at children under 13.</p>
-<h2>Contact</h2>
-<p>Questions: <a href="mailto:abdulhady.aariyan@gmail.com">abdulhady.aariyan@gmail.com</a></p>
-</main></body>
+
+<h2>8. Security</h2>
+<p>Your saved notifications are protected by Android's app sandbox, which keeps other apps from reading them. Statistics are sent to Google over an encrypted connection. We recommend using a screen lock on your phone, because anyone who can open NothingLost on your unlocked phone can read what it saved.</p>
+
+<h2>9. Children</h2>
+<p>NothingLost is intended for adults aged 18 and over and is not directed at children.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes, we will update this page and the effective date above. If we ever collect anything beyond what is described here, we will say so here and in the app's Google Play Data safety section before the change takes effect.</p>
+
+<h2>11. Contact</h2>
+<p>Questions about this policy or your privacy: <a href="mailto:abdulhady.aariyan@gmail.com">abdulhady.aariyan@gmail.com</a></p>
+
+<footer>© 2026 NothingLost</footer>
+</main>
+</body>
 </html>
