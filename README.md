@@ -1,4 +1,4 @@
-# NothingLost privacy policy
+# Recover: See Deleted Messages · privacy policy (formerly NothingLost)
 
 Public privacy policy for the NothingLost Android app (`com.nothinglost.app`), served by GitHub Pages:
 **https://ahaariyan.github.io/NothingLostPrivacyPolicy/**
@@ -37,5 +37,5 @@ Verified against the app source on 25 September 2026:
 
 ```sh
 python3 -m http.server 8000
-# then open http://localhost:8000
+# Recover: See Deleted Messages · privacy policy (formerly NothingLost)
 ```
